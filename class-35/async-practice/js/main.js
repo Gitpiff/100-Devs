@@ -1,16 +1,16 @@
 //Code 01
-function houseOne(){
-    console.log('Paper delivered to house 1')
-}
-function houseTwo(){
-    console.log('Paper delivered to house 2')
-}
-function houseThree(){
-    console.log('Paper delivered to house 3')
-}
-houseOne()
-houseTwo()
-houseThree()
+// function houseOne(){
+//     console.log('Paper delivered to house 1')
+// }
+// function houseTwo(){
+//     console.log('Paper delivered to house 2')
+// }
+// function houseThree(){
+//     console.log('Paper delivered to house 3')
+// }
+// houseOne()
+// houseTwo()
+// houseThree()
 
 //Code 02
 // function houseOne(){
@@ -40,7 +40,7 @@ houseThree()
 //     console.log('Paper delivered to house 3')
 // }
 // houseOne()
-// houseTwo(houseThree)
+//houseTwo(houseThree)
 
 //Code 04
 // function houseOne(){
@@ -69,36 +69,38 @@ houseThree()
 // promise
 //     .then(data => console.log(data))
 //     .catch(err => console.log(err))
+//then is a method that runs when a promise has been resolved
+//All Web APIs return promises
 
 //Code 06
-// function houseOne(){
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             resolve('Paper delivered to house 1')
-//         }, 1000)
-//     })
-// }
-// function houseTwo(){
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             resolve('Paper delivered to house 2')
-//         }, 5000)
-//     })
-// }
-// function houseThree(){
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             resolve('Paper delivered to house 3')
-//         }, 2000)
-//     })
-// }
-// houseOne()
-//     .then(data => console.log(data))
-//     .then(houseTwo)
-//     .then(data => console.log(data))
-//     .then(houseThree)
-//     .then(data => console.log(data))
-//     .catch(err => console.log(err))
+function houseOne(){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Paper delivered to house 1')
+        }, 1000)
+    })
+}
+function houseTwo(){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Paper delivered to house 2')
+        }, 5000)
+    })
+}
+function houseThree(){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('Paper delivered to house 3')
+        }, 2000)
+    })
+}
+houseOne()
+    .then(data => console.log(data))
+    .then(houseTwo)
+    .then(data => console.log(data))
+    .then(houseThree)
+    .then(data => console.log(data))
+    .catch(err => console.log(err))
 
 //Code 07
 // function houseOne(){
