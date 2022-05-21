@@ -12,6 +12,7 @@ class Animal{
 class Mammal extends Animal{
     constructor(name, type) {
         super(name)
+        super.swim()
         this.type = type
     }
 }
