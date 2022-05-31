@@ -4,5 +4,6 @@
         "machi",
         "Pitbull",
         "Shorthair"
-    ]
+    ],
+    "liveServer.settings.port": 5501
 }
