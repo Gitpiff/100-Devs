@@ -1,4 +1,5 @@
 A promise is an object that represents the eventual completion or failure of an async operation and its value, simply pu it is an object that MAY have a value in the future.
+Most web APIs respond with a promise
 
 A promise can have three possible states;
 1.- pending; initial state, neither fulfilled nor rejected.
@@ -41,4 +42,4 @@ Example, this code will behave asynchronous even when it has timers
 //     console.log(houseThreeWait)
 // }
 
-await makes the function wait until the promise is resolved before moving on 
+await makes the function wait until the promise is resolved before moving on

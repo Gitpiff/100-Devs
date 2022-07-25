@@ -1,0 +1,2 @@
+A higher order function is a function that takes another function as an argument, for example an event listener addEventListener("click", callback).
+A callback is the function that has been passed as an argument, it only fires once the asynchronous task or another function is done
