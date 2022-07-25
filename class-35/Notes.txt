@@ -40,3 +40,5 @@ Example, this code will behave asynchronous even when it has timers
 //     console.log(houseTwoWait)
 //     console.log(houseThreeWait)
 // }
+
+await makes the function wait until the promise is resolved before moving on 
