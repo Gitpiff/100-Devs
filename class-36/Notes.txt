@@ -1,2 +1,17 @@
 A higher order function is a function that takes another function as an argument, for example an event listener addEventListener("click", callback).
 A callback is the function that has been passed as an argument, it only fires once the asynchronous task or another function is done
+
+Queue; The first element which was added to the list, will be the first element out.
+This is called a FIFO (First In First Out) structure.
+
+Stack; The first element which was added to the list, will be the last one out.
+This is called a LIFO (Last In First Out) structure.
+
+The Event Loop monitors the callbnack queue and the job queue and decides what needsa to be 
+pushed to the call stack.
+
+JS is a language that can only do what the hosting enviroment allows.
+
+Servers need network access and disk access.
+
+Figlet is a library that takes in a string and makes it ASCII art -npm install figlet-
