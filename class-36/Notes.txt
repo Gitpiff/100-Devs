@@ -15,3 +15,5 @@ JS is a language that can only do what the hosting enviroment allows.
 Servers need network access and disk access.
 
 Figlet is a library that takes in a string and makes it ASCII art -npm install figlet-
+
+The interface that we use in the browser is the url by making request to our Servers.
