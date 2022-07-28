@@ -1,0 +1,10 @@
+Express; Fast, unopinionated web framework for Node.JS, with a myriad of HTTP utility methods and middleware at your disposal, 
+creating a robust API is quick and easy.
+
+Middleware is everything that happens between the request and the response.
+
+Setting up the project
+mkdir api-project          => Create Folder
+cd api-projet              => Move into the Folder
+npm init                   => Create a JSON package
+npm install express --save => Install Express and save it into the JSON package.
