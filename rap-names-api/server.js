@@ -17,6 +17,11 @@ const rappers = {
         "age": 29,
         "birthName": "springfield",
         "location": "springfield"
+    },
+    "unknown": {
+        "age": 0,
+        "birthName": "unknown",
+        "location": "unknown"
     }
 }
 
@@ -24,8 +29,9 @@ app.get("/", (request, response) => {
     response.sendFile(__dirname + "/index.html")
 })
 
-app.get("/api/:rapperName", (request, response) => {
-    const rappersName = request.params.rapperName.toLocaleLowerCase()
+app.get("/api/:rapper", (request, response) => {
+    //avoid case errors, make everything lower case
+    const rappersName = request.params.rapper.toLocaleLowerCase()
     if(rappers[rappersName]){
         response.json(rappers[rappersName])
     } else {
@@ -33,6 +39,6 @@ app.get("/api/:rapperName", (request, response) => {
     }
 })
 
-app.listen(process.env.PORT || PORT, () => {
-    console.log(`Server running on ${PORT}`)
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}! Betta Go Catch It!`)
 })
