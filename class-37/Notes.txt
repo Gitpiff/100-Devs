@@ -1,4 +1,4 @@
-Express; Fast, unopinionated web framework for Node.JS, with a myriad of HTTP utility methods and middleware at your disposal, 
+Express; Fast, unopinionated web framework for Node.JS, with a myriad of HTTP utility methods and middleware at your disposal,
 creating a robust API is quick and easy.
 
 Middleware is everything that happens between the request and the response.
@@ -8,3 +8,15 @@ mkdir api-project          => Create Folder
 cd api-projet              => Move into the Folder
 npm init                   => Create a JSON package
 npm install express --save => Install Express and save it into the JSON package.
+
+HTTPS Requests
+
+Post -app.post()- === Create => API "hears" the request, "looks" at the data that came with the request, then stores it in the database, if the response was successful it will refresh the page making a get request.
+
+Get -app.get()- === Read => Get request goes to the server, in which the API "hears" that request, then the API locates the data requested, gets it and puts in in a template, and finally sends it out as a HTML file.
+
+Put -app.put()- === Update => API in server "hears" the put request, it looks at the data that came with the request, then looks at the data that supposed to be modified, looks in the data base and makes the changes, once the changes are made, if the response was successful, it will refresh the page, and by doing so it will make a get request displaying the updated data.
+
+Delete -app.delete()- === Delete => Request leaves the client, API in server "hears" it, "looks" the data sent with the request, deletes the data sent with the request, sends back as a response the updated HTML file, finally it makes a get request and displays the updated data.
+
+
