@@ -1,0 +1,7 @@
+Mongo DB is a database, it has collections and documents.
+
+A collection is a group of documents.
+
+A document is just an object.
+
+EJS Embedded Javascript Templates -HTML with programmatic syntax-
